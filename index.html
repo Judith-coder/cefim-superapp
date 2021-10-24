@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3ce48d8f5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation" id="navigation">
+        <a href="#">
+          <img
+            src="images/Logo.png"
+            srcset="images/Logo@2x.png 2x, images/Logo.png 1x"
+            style="max-width: 120px"
+            alt="superApp-logo"
+            class="superApp-logo"
+        /></a>
+        <div class="burger-menu">
+          <button aria-expanded="false" aria-controls="menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="menu" hidden>
+            <li><a href="#a-propos-section">A propos</a></li>
+            <li><a href="#services-section">Services</a></li>
+            <li><a href="#team-section">L'équipe</a></li>
+            <li><a href="#form">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="banner" id="a-propos-section">
+        <h1>SUPER APP</h1>
+        <h4>L'application trop super !</h4>
+        <div class="line"></div>
+        <div class="links">
+          <a href="#"
+            ><img
+              class="icon-links"
+              alt="like-icon"
+              src="images/thumbs-up.svg"
+            />
+            Like it</a
+          >
+          <a href="#"
+            ><img
+              class="icon-links"
+              alt="heart-icon"
+              src="images/heart-shape-silhouette.svg"
+            />Love it</a
+          >
+          <a href="#"
+            ><img
+              class="icon-links"
+              alt="shopping-cart-icon"
+              src="images/shopping-cart-black-shape.svg"
+            />Buy it
+          </a>
+        </div>
+      </section>
+    </header>
+    <article>
+      <section class="services-section" id="services-section">
+        <h2>ELLE FAIT DES TRUCS SUPERS !</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <div class="service-icon">
+              <img
+                src="images/fork-and-knife-silhouette.svg"
+                alt="fork-knife-icon"
+              />
+            </div>
+            <h3 class="service-title">Mettre la table</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/bed.svg" alt="bed-icon" />
+            </div>
+            <h3 class="service-title">Faire le lit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/fire-symbol.svg" alt="fire-icon" />
+            </div>
+            <h3 class="service-title">Allumer le feu</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <img
+                src="images/plant-leaf-with-white-details.svg"
+                alt="leaf-icon"
+              />
+            </div>
+            <h3 class="service-title">Ramasser les feuilles</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <img
+                src="images/umbrella-black-silhouette.svg"
+                alt="umbrella-icon"
+              />
+            </div>
+            <h3 class="service-title">Protéger de la pluie</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="images/dollar-symbol.svg" alt="dollar-icon" />
+            </div>
+            <h3 class="service-title">Vider votre compte</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Reprehendit
+              provident nam officiis ex harum, dolor sit dicta mius fugit,
+              debitis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="team" id="team-section">
+        <header class="section-team-header">
+          <h1>La super équipe à l'origine de SuperApp</h1>
+        </header>
+        <div class="member-list">
+          <div class="member-item">
+            <img
+              src="images/avaone.jpg.png"
+              srcset="images/avaone.jpg@2x.png 2x, images/avaone.jpg.png 1x"
+              class="member-photo"
+              alt="tex-talign-photo"
+            />
+            <h3>Tex Talign</h3>
+            <a href="mailto:#"
+              ><img
+                src="images/envelope.svg"
+                alt="enveloppe-icon"
+                class="email-icon"
+              />Lui écrire</a
+            >
+          </div>
+          <div class="member-item">
+            <img
+              src="images/avatwo.jpg.png"
+              srcset="images/avatwo.jpg@2x.png 2x, images/avatwo.jpg.png 1x"
+              class="member-photo"
+              alt="marge-inn-photo"
+            />
+            <h3>Marge Inn</h3>
+            <a href="mailto:#"
+              ><img
+                src="images/envelope.svg"
+                alt="enveloppe-icon"
+                class="email-icon"
+              />Lui écrire</a
+            >
+          </div>
+          <div class="member-item">
+            <img
+              src="images/avathree.jpg.png"
+              srcset="images/avathree.jpg@2x.png 2x, images/avathree.jpg.png"
+              class="member-photo"
+              alt="isaac-newton-photo"
+            />
+            <h3>Isaac Newton</h3>
+            <a href="mailto:#"
+              ><img
+                src="images/envelope.svg"
+                alt="enveloppe-icon"
+                class="email-icon"
+              />Lui écrire</a
+            >
+          </div>
+          <div class="member-item">
+            <img
+              src="images/avafour.jpg.png"
+              srcset="images/avafour.jpg@2x.png 2x, images/avafour.jpg.png 1x"
+              class="member-photo"
+              alt="ash-tehemel-photo"
+            />
+            <h3>Ash Tehemel</h3>
+            <a href="mailto:#"
+              ><img
+                src="images/envelope.svg"
+                alt="enveloppe-icon"
+                class="email-icon"
+              />Lui écrire</a
+            >
+          </div>
+        </div>
+      </section>
+      <form action="" method="GET" class="contact-form" id="form">
+        <div class="contact-section">
+          <h2>ENVOYEZ-NOUS UN MESSAGE</h2>
+          <div class="container">
+            <div class="contact-infos">
+              <div class="form-row">
+                <label for="name">Votre nom</label>
+                <input id="name" name="name" type="text" />
+              </div>
+              <div class="form-row">
+                <label for="email-address">Votre e-mail</label>
+                <input id="email-address" name="email-address" type="email" />
+              </div>
+            </div>
+            <div class="form-row form-row-message">
+              <label for="message">Votre message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="submit-area">
+              <a href="#" class="submit-button"
+                ><img src="images/paper-plane.svg" alt="send-icon" />Envoyer</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+    </article>
+    <script>
+      const toggleMenu = document.querySelector(".navigation button");
+      const menu = document.querySelector(".navigation ul");
+
+      toggleMenu.addEventListener("click", function () {
+        const open = JSON.parse(toggleMenu.getAttribute("aria-expanded"));
+        toggleMenu.setAttribute("aria-expanded", !open);
+        menu.hidden = !menu.hidden;
+
+        if (!menu.hidden) {
+          menu.querySelector("a").focus();
+        }
+      });
+    </script>
+  </body>
+</html>

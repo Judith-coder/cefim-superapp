@@ -1,0 +1,430 @@
+:root {
+  --primary-color: #2e2e2e;
+  --secondary-color: #ffffff;
+  --accent-color: #dd5555;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font-size and color definition*/
+
+h1,
+h4 {
+  color: var(--secondary-color);
+}
+
+.services-section h2,
+h3,
+p {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 8px 0 12px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.line {
+  background-color: var(--secondary-color);
+  height: 1px;
+  margin-bottom: 32px;
+  width: 390px;
+}
+
+/************** Specific layout option ********************/
+
+a {
+  text-decoration: none;
+}
+
+/*------- HEADER ----------*/
+
+.navigation {
+  background-color: var(--accent-color);
+
+  width: 100%;
+  min-height: 52px;
+
+  display: flex;
+  position: fixed;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation .superApp-logo {
+  margin-left: 12px;
+}
+
+.burger-menu {
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.burger-menu button {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+
+  display: flex;
+  font-size: 32px;
+  padding: 10px;
+}
+
+[hidden] {
+  display: none;
+}
+
+ul {
+  background: var(--accent-color);
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 20px 24px;
+  position: absolute;
+  top: 47px;
+  left: -68px;
+}
+
+li a,
+li a:visited {
+  color: var(--secondary-color);
+}
+
+li a:hover {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+/*------- A PROPOS SECTION (BANNER) ----------*/
+
+.banner {
+  background: -webkit-image-set(
+    url("images/about.jpg.png") 1x,
+    url("images/about.jpg@2x.png") 2x
+  );
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 658px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links a,
+.links a:visited {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 16px;
+  width: 116px;
+}
+
+.links a:hover {
+  border: 3px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.links img {
+  margin-right: 6px;
+}
+
+/*------- ARTICLE (SECTION "SERVICES") ----------*/
+
+.services-section {
+  margin-bottom: 52px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-item {
+  margin: 24px;
+}
+
+.service-item h3 {
+  margin: 18px;
+}
+
+.service-icon {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin: 0 auto;
+
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------- ARTICLE (SECTION "TEAM") ----------*/
+
+.section-team-header {
+  background: -webkit-image-set(
+    url("images/team.jpg.png") 1x,
+    url("images/team.jpg@2x.png") 2x
+  );
+  background-size: cover;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section-team-header h1 {
+  margin: 0 auto;
+}
+
+.member-list,
+.member-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-item:first-of-type {
+  margin-top: 52px;
+}
+
+.member-photo {
+  border-radius: 50%;
+}
+
+.member-item a,
+.member-item a:visited {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  margin: 12px 0 32px 0;
+  padding: 10px 16px;
+}
+
+.member-item a:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  color: var(--secondary-color);
+}
+
+.email-icon {
+  margin-right: 12px;
+}
+
+/*------- FORMULAIRE CONTACT ----------*/
+
+form {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.contact-section h2 {
+  padding-top: 52px;
+}
+
+.contact-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 12px;
+}
+
+.form-row label {
+  margin: 0 7px;
+  width: 100%;
+}
+
+.form-row input,
+textarea {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin: 0 7px 24px;
+  width: 100%;
+}
+
+.form-row input {
+  height: 38px;
+}
+
+textarea {
+  height: 112px;
+  resize: none;
+}
+
+form .submit-area {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7px;
+  padding-bottom: 52px;
+}
+
+form .submit-button,
+form .submit-button:visited {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 9px 18px;
+  width: fit-content;
+}
+
+form .submit-button:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.submit-button img {
+  padding-right: 12px;
+}
+
+/****************** RESPONSIVE DESIGN *********************/
+
+/*------ Small devices (large screen phones) ----------*/
+@media only screen and (min-width: 480px) {
+  #navigation button {
+    display: none;
+  }
+  #menu {
+    display: inline;
+    position: static;
+  }
+  #menu > li {
+    display: inline;
+    margin-right: 12px;
+  }
+
+  .burger-menu {
+    margin-left: 0;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+}
+
+/*------ Medium devices (tablet) ----------*/
+@media only screen and (min-width: 768px) {
+  .service-list,
+  .member-list {
+    flex-direction: row;
+  }
+
+  .member-list {
+    margin-top: 52px;
+  }
+
+  .service-item,
+  .member-item {
+    width: 40%;
+  }
+
+  .member-item:first-of-type {
+    margin-top: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .contact-infos {
+    flex-direction: row;
+  }
+
+  .form-row {
+    margin: 0;
+    width: 47%;
+  }
+
+  .form-row:first-of-type {
+    margin-right: 6%;
+  }
+
+  .form-row-message {
+    width: 100%;
+  }
+
+  .submit-area {
+    padding-right: 0;
+  }
+}
+
+/*------ Large devices (desktop) ----------*/
+
+@media only screen and (min-width: 1024px) {
+  .service-list,
+  .member-list,
+  .container {
+    margin: 0 auto;
+    max-width: 1138px;
+    width: 90%;
+  }
+
+  .member-list {
+    margin-top: 52px;
+  }
+
+  .service-item {
+    width: 27%;
+  }
+
+  .member-item {
+    margin: 24px;
+    width: 20%;
+  }
+}
